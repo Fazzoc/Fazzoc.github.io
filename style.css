@@ -1,11 +1,15 @@
 body {
     margin: 0;
+	background-color: #000000;
+	background-image: url('assets/tumblr_pkv647vWBM1xp1j77o1_540.gif');
+    background-size: cover;
+    background-attachment: fixed;
     height: 99vh;
 }
 
 /* Style for the menu bar */
 .navbarbg {
-    background: #0675f3;
+    background: #3d3d3d;
     border-radius: 5px;
     box-shadow: 0px 3px 5px #0c0c0c67;
 }
