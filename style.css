@@ -2,6 +2,9 @@ body {
     margin: 0;
     height: 99vh;
 }
+td {
+	font-family: 'Berlin Sans FB Demi', 'Berlin Sans FB', sans-serif;
+}
 
 /* Style for the menu bar */
 .navbarbg {
