@@ -1,5 +1,3 @@
-html{
-}
 body {
     margin: 0;
     height: 99vh;
@@ -98,9 +96,4 @@ body {
 ::-webkit-scrollbar-thumb {
     background-color: #3b3b3b;
     border-radius: 2px;
-}
-
-/* Custom font for td elements */
-td {
-    font-family: "Berlin Sans FB Demi", "Berlin Sans FB", sans-serif;
 }
