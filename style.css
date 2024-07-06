@@ -1,4 +1,5 @@
-/* Reset default margin on body and set background properties */
+html{
+}
 body {
     margin: 0;
     height: 99vh;
