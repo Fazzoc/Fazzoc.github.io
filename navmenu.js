@@ -1,4 +1,2 @@
-var audio = $("#select")[0];
-$("navbar").mouseenter(function() {
-  audio.play();
-});
+var audio = new Audio('/s/select.ogg');
+audio.play();
