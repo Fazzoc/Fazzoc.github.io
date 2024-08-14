@@ -1,3 +1,17 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Check if there is a hash in the URL
+    if (!window.location.hash) {
+        // If no hash, default to #home
+        window.location.hash = "#home";
+    }
+
+    // Trigger a click on the default section based on the hash
+    const defaultSection = document.querySelector(window.location.hash);
+    if (defaultSection) {
+        defaultSection.scrollIntoView();
+    }
+});
+
 // Function to play sound
 function playSound(soundType) {
     var audio = new Audio();
