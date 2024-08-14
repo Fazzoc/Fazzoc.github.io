@@ -1,12 +1,7 @@
-body, html {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    text-align: center;
-    height: 100%;
-    overflow: hidden;
-    margin: inherit;
-  }
+body {
+    margin: 0;
+	background-color: #363636;
+}
 
 .navbarbg {
     background: #3d3d3d;
@@ -96,48 +91,3 @@ body, html {
     background-color: #3b3b3b;
     border-radius: 2px;
 }
-
-section {
-    height: 100%;
-    width: 100%;
-    display: table;
-    pointer-events: none;
-    z-index: 0;
-    -webkit-transition: transform 0.45s cubic-bezier(0, 0, 0.21, 1);
-    transition: transform 0.45s cubic-bezier(0, 0, 0.21, 1);
-  }
-  section h1 {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    color: #fff;
-    font-weight: lighter;
-  }
-
-
-#home {
-    background: #42113C;
-  }
-  
-  #about {
-    background: #618B25;
-  }
-  
-  #edt {
-    background: #6BD425;
-  }
-  
-  a[id="home"]:target ~ #one {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  
-  a[id="about"]:target ~ #two {
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-  
-  a[id="edt"]:target ~ #three {
-    -webkit-transform: translate3d(0, -200%, 0);
-    transform: translate3d(0, -200%, 0);
-  }
