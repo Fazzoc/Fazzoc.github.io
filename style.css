@@ -1,20 +1,15 @@
 body {
     margin: 0;
-	background-color: #000000;
-	background-image: url('assets/tumblr_pkv647vWBM1xp1j77o1_540.gif');
-    background-size: cover;
-    background-attachment: fixed;
+	background-color: #363636;
     height: 99vh;
 }
 
-/* Style for the menu bar */
 .navbarbg {
     background: #3d3d3d;
     border-radius: 5px;
     box-shadow: 0px 3px 5px #0c0c0c67;
 }
 
-/* General styling for menu links */
 .navbar ul {
     margin: 0;
     padding: 0;
@@ -38,11 +33,6 @@ body {
     transition: all 0.1s ease-out;
 }
 
-.navbar ul li a.selected {
-    /*CSS class that's dynamically added to the currently active menu items' LI A element*/
-    border-radius: 5px;
-}
-
 .navbar ul li a:hover {
     background: #ffffff14;
     opacity: 1;
@@ -51,7 +41,6 @@ body {
     transform: translateY(-0.70px);
 }
 
-/* Common border-radius classes */
 .roundify {
     border-radius: 5px;
 }
