@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var href = link.getAttribute('href');
             setTimeout(function() {
                 window.location.href = href;
-            }, 1000); // Delay navigation for 1 second after sound finishes
+            }, 0); // Delay navigation for 1 second after sound finishes
         });
     });
 });

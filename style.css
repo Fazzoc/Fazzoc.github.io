@@ -1,10 +1,10 @@
 body, html {
     font-family: Berlin Sans FB Demi, Berlin Sans FB;
     height: 100%;
-    overflow: hidden; /* Prevents page bounce and scrolling */
+    overflow: hidden;
     margin: 0;
     background-color: #363636;
-    position: relative; /* Ensure body position is relative for absolute positioned elements */
+    position: relative;
 }
 
 .navbarbg {
@@ -13,16 +13,16 @@ body, html {
     box-shadow: 0px 3px 5px #0c0c0c67;
     position: sticky;
     top: 0;
-    width: 100%; /* Ensure the navbar spans the full width */
-    z-index: 1000; /* Ensure the navbar is always on top */
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    z-index: 1000; /* Ensure the navbar items are above other content */
-    position: relative; /* Ensure the navbar items stack correctly */
+    z-index: 1000; 
+    position: relative; 
 }
 
 .navbar ul li {
