@@ -121,13 +121,6 @@ a[id="about"]:target ~ #about,
 a[id="edt"]:target ~ #edt {
     opacity: 1;
     visibility: visible;
-    transition: opacity 0.45s cubic-bezier(0, 0, 0.21, 1), visibility 0s;
     z-index: 2;
-}
-
-section:not(:target) {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.45s cubic-bezier(0, 0, 0.21, 1), visibility 0s 0.45s;
-    z-index: 1;
+    transition: opacity 0.45s cubic-bezier(0, 0, 0.21, 1), visibility 0s;
 }

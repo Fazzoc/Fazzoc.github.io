@@ -1,40 +1,28 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Check if there is a hash in the URL
-    if (!window.location.hash) {
-        // If no hash, default to #home
-        window.location.hash = "#home";
-    }
+document.addEventListener("DOMContentLoaded", () => {
+    const hash = window.location.hash || "#home";
+    window.location.hash = hash;
 
-    // Trigger a click on the default section based on the hash
-    const defaultSection = document.querySelector(window.location.hash);
-    if (defaultSection) {
-        defaultSection.scrollIntoView();
-    }
+    const defaultSection = document.querySelector(hash);
+    defaultSection?.scrollIntoView();
 });
 
-// Function to play sound
+
 function playSound(soundType) {
-    var audio = new Audio();
-    if (soundType === 'select') {
-        audio.src = 'select.ogg';
-    } else if (soundType === 'confirm') {
-        audio.src = 'confirm.ogg';
-    }
+    const sounds = {
+        select: 'select.ogg',
+        confirm: 'confirm.ogg'
+    };
+
+    const audio = new Audio(sounds[soundType]);
     audio.play();
 }
 
-// Play confirm sound on click of navbar button
-document.addEventListener('DOMContentLoaded', function() {
-    var navbarLinks = document.querySelectorAll('.navbar a');
-    navbarLinks.forEach(function(link) {
-        link.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default navigation
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.navbar a').forEach(link => {
+        link.addEventListener('click', event => {
+            event.preventDefault();
             playSound('confirm');
-            // Optionally, navigate to the link after playing the sound
-            var href = link.getAttribute('href');
-            setTimeout(function() {
-                window.location.href = href;
-            }, 0); // Delay navigation for 1 second after sound finishes
+            window.location.href = link.getAttribute('href');
         });
     });
 });
