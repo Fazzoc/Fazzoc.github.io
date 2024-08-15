@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     defaultSection?.scrollIntoView();
 });
 
-
 function playSound(soundType) {
     const sounds = {
         select: 'select.ogg',

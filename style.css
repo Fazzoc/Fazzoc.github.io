@@ -9,12 +9,11 @@ body, html {
 
 .navbarbg {
     background: #3d3d3d;
-    margin: 7px;
+    margin: 8px auto; 
     border-radius: 5px;
     box-shadow: 0px 3px 5px #0c0c0c67;
     position: sticky;
-    width: 99%;
-    z-index: 10;
+    width: calc(100% - 15px);
 }
 
 .navbar ul {
@@ -46,43 +45,42 @@ body, html {
     transform: translateY(-0.70px);
 }
 
-.roundify {
+.roundALL {
     border-radius: 5px;
 }
 
-.roundifyL {
+.roundL {
     border-radius: 5px 0 0 5px;
 }
 
-.roundifyR {
+.roundR {
     border-radius: 0 5px 5px 0;
 }
 
-.roundifyT {
+.roundT {
     border-radius: 5px 5px 0 0;
 }
 
-.roundifyB {
+.roundB {
     border-radius: 0 0 5px 5px;
 }
 
-.roundifyBR {
-    border-radius: 0 0 5px;
+.roundBR {
+    border-radius: 0 0 5px 0;
 }
 
-.roundifyBL {
+.roundBL {
     border-radius: 0 0 0 5px;
-}
-
-.scrlbar {
-    height: 200vh;
-    width: 960px;
-    margin: auto;
-    max-width: 20%;
 }
 
 ::-webkit-scrollbar-track {
     background-color: #363636;
+}
+.roundTR {
+    border-radius: 0 5px 0 0;
+}
+.roundTL {
+    border-radius: 5px 0 0 0;
 }
 
 ::-webkit-scrollbar {
@@ -94,24 +92,21 @@ body, html {
     background-color: #717171;
     border-radius: 2px;
 }
+
 section {
     height: calc(100% - 60px);
     width: 100%;
     position: absolute;
-    top: 60px;
-    left: 0;
-    background: #363636;
     opacity: 0;
     visibility: hidden;
     overflow-y: auto;
-    transition: opacity 0.45s cubic-bezier(0, 0, 0.21, 1), visibility 0s 0.45s;
-    z-index: 1;
+    transition: opacity 0.45s cubic-bezier(0, 0, 0.21, 1), visibility 0s 0.45s; 
 }
+
 a[id="home"]:target ~ #home,
 a[id="about"]:target ~ #about,
 a[id="edt"]:target ~ #edt {
     opacity: 1;
     visibility: visible;
-    z-index: 2;
     transition: opacity 0.45s cubic-bezier(0, 0, 0.21, 1), visibility 0s;
 }
