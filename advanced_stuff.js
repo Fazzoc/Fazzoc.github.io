@@ -13,9 +13,9 @@ function playSound(soundType) {
     };
 
     function isMobile() {
-        return /Mobi|Android/i.test(navigator.userAgent);
+        return /Mobi/i.test(navigator.userAgent);
     }
-
+    
     if (soundType === 'select' && isMobile()) {
         return;
     }
