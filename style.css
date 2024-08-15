@@ -1,5 +1,9 @@
+@font-face {
+    font-family: "Berlin Sans FB Demi, Berlin Sans FB";
+    src: url('assets/BRLNSDB.ttf');
+  }
 body, html {
-    font-family: Berlin Sans FB Demi, Berlin Sans FB; src: url('assets/BRLNSDB.TTF');
+    font-family: Berlin Sans FB Demi, Berlin Sans FB;
     height: 100%;
     overflow: hidden;
     margin: 0;
