@@ -33,3 +33,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const endScroll = 50;
+    const initialMargin = 8;
+    const widthOffset = 15.5;
+
+    const navbar = document.querySelector('.navbarbg');
+    const sections = document.querySelectorAll('section');
+
+    sections.forEach(section => {
+        section.addEventListener('scroll', function() {
+            const scrollPosition = section.scrollTop;
+            const progress = Math.min(Math.max(scrollPosition / endScroll, 0), 1);
+            const newMargin = `${(1 - progress) * initialMargin}px`;
+            const newWidth = `calc(100% - ${widthOffset * (1 - progress)}px)`;
+
+            navbar.style.margin = `${newMargin} auto`;
+            navbar.style.width = newWidth;
+        });
+    });
+});
