@@ -12,6 +12,14 @@ function playSound(soundType) {
         confirm: 'confirm.ogg'
     };
 
+    function isMobile() {
+        return /Mobi|Android/i.test(navigator.userAgent);
+    }
+
+    if (soundType === 'select' && isMobile()) {
+        return;
+    }
+
     const audio = new Audio(sounds[soundType]);
     audio.play();
 }
