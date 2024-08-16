@@ -10,6 +10,7 @@ body, html {
     background-color: #ececec;
     position: relative;
 }
+
 * {
     color: #2f2f2f;
 }
@@ -102,7 +103,7 @@ body, html {
 }
 
 section {
-    height: calc(100% - 60px);
+    height: calc(100% - 39px);
     width: 100%;
     position: absolute;
     opacity: 0;
