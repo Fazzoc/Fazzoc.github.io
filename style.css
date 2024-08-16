@@ -7,16 +7,22 @@ body, html {
     height: 100%;
     overflow: hidden;
     margin: 0;
-    background-color: #ececec;
+    background-color: #E6E6E6;
     position: relative;
 }
+.square {
+    height: 150px;
+    width: 150px;
+    border-radius: 8px;
+    background-color: #9F4A54;
+  }
 
 * {
-    color: #2f2f2f;
+    color: #39393A;
 }
 
 .navbarbg {
-    background: #b7b7b7;
+    background: #0582CA;
     margin: 8px auto; 
     border-radius: 5px;
     box-shadow: 0px 3px 5px #0c0c0c67;
