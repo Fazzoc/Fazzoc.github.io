@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     const endScroll = 50;
     const initialMargin = 8;
     const widthOffset = 15.5;
@@ -42,20 +42,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const navbar = document.querySelector('.navbarbg');
 
-    const sections = document.querySelectorAll('section');
+    document.querySelectorAll('section').forEach(section => {
+        section.addEventListener('scroll', () => {
+            const progress = Math.min(Math.max(section.scrollTop / endScroll, 0), 1);
 
-    sections.forEach(section => {
-        section.addEventListener('scroll', function() {
-            const scrollPosition = section.scrollTop;
-            const progress = Math.min(Math.max(scrollPosition / endScroll, 0), 1);
-
-            const newMargin = `${(1 - progress) * initialMargin}px`;
-            const newWidth = `calc(100% - ${widthOffset * (1 - progress)}px)`;
-            const newBorderRadius = `${(1 - progress) * initialBorderRadius}px`;
-
-            navbar.style.margin = `${newMargin} auto`;
-            navbar.style.width = newWidth;
-            navbar.style.borderRadius = newBorderRadius;
+            navbar.style.margin = `${(1 - progress) * initialMargin}px auto`;
+            navbar.style.width = `calc(100% - ${widthOffset * (1 - progress)}px)`;
+            navbar.style.borderRadius = `${(1 - progress) * initialBorderRadius}px`;
         });
     });
 });
