@@ -7,12 +7,15 @@ body, html {
     height: 100%;
     overflow: hidden;
     margin: 0;
-    background-color: #363636;
+    background-color: #ececec;
     position: relative;
+}
+* {
+    color: #2f2f2f;
 }
 
 .navbarbg {
-    background: #3d3d3d;
+    background: #b7b7b7;
     margin: 8px auto; 
     border-radius: 5px;
     box-shadow: 0px 3px 5px #0c0c0c67;
@@ -36,7 +39,7 @@ body, html {
     margin: 3px;
     text-decoration: none;
     font-size: 16px;
-    color: #F7F2F2;
+    color: #eeeeee;
     border-radius: 5px;
     transition: all 0.1s ease-out;
 }
@@ -85,7 +88,7 @@ body, html {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #363636;
+    background-color: #ececec;
 }
 
 ::-webkit-scrollbar {
